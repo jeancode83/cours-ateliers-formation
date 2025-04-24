@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    margin: 0;
+    font-family: "Playfair Display", serif;
+}
+
+nav {
+    color: whitesmoke;
+    height: 7rem;
+    background-color: rgb(47, 114, 215);
+}
+
+
+h1 {
+    display: inline-block;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+nav a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.container-header {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5rem;
+    padding-right: 5rem;
+ 
+    
+}
+
+a:hover {
+    color: aqua;
+}
+
+
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+    
+}
+
+@media screen and (min-width: 992px) {
+    .movies-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .movies-wrapper section {
+        flex-basis: 49%;
+    }
+}
+
+@media screen  and (min-width: 576px) {
+    .movies {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .movie {
+        flex-basis: 32%;
+    }
+}
+
+.movie {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+}
+
+.movie img {
+    width: 100%;
+    vertical-align: bottom;
+    transition: all 0.5s;
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+}
+
+.movie figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(5,37,6,0);
+    color: rgba(265,265,265,0);
+    padding: 2rem 1rem;
+    transform: translateY(-1rem);
+    transition: all(0.5s);
+}
+
+.movie:hover figcaption {
+    background-color: rgba(5,37,6,0.65);
+    color: white;
+    transform: translateY(0);
+}
+
+h1 {
+    animation-name: apparition;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes  apparition {
+    0% {
+        color: #2E72D7;
+    }
+    
+    100% {
+        color: white;
+    }
+}
+
+
+
