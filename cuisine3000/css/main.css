@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding-left: 0;
+}
+
+body {
+    font-family:"Roboto", serif;
+}
+
+h1 {
+    color: orangered;
+    padding: 1rem 4rem;
+    border-bottom: 2px solid orangered;
+}
+
+.doc_recettes {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 2rem;
+    justify-content: space-between;
+    padding: 0.5rem;
+    margin: 0.5rem;
+} 
+
+.recette {
+    flex-basis: 24%;
+}
+   
+.recette img {
+    width: 100%;
+    height: 16rem;
+}
+
+
+@media screen and (max-width: 575px) {
+    .doc_recettes {
+       flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991px) {
+    .recette {
+       flex-basis: 46%;
+
+    }
+}
