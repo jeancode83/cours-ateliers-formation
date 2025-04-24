@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Accueil Marvel univers</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <ul class="logo">
+                <li class="logo1"><a href="#">MARVEL</a></li>
+                <li class="logo2"><a href="#">UNIVERS</a></li>
+            </ul>
+        <nav>
+            <ul class="nav">
+                <li><a class="deco" href="#prez">Personnages</a></li>
+                <li><a class="nonedeco" href="#cine">Cinéma</a></li>
+                <li><a class="deco" href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+            <div class="titrehaut">
+                    <div class="titreh1">
+                        <h1>DÉCOUVREZ L'UNIVERS MARVEL !</h1>
+                    </div>
+                    <div class="titreh2">
+                        <h2>Devenez incollable sur l'univers MARVEL, ses personnages et ses films...</h2>
+                    </div>
+            </div>
+            <div class="presentationperso">
+                <div class="h1presentation">
+                    <h1 id="prez">LES PERSONNAGES EMBLEMATIQUES</h1>
+                </div>
+                <div class="img_sheros">
+                    <div class="ironman">
+                        <img src="img/iron-man.png">
+                            <h3>Iron Man</h3>
+                            <p>Anthony &laquoTony&raquo Stark, alias Iron<br>Man, est un super-héros évoluant<br>
+                            dans l'univers Marvel de la maison<br>d'édition Marvel Comics.</p>
+                        <div class="btndetail"><a href="#">Détail</a></div>
+                    </div>
+                
+                    <div class="spiderman">
+                        <img src="img/spiderman.png">
+                            <h3>Spiderman</h3>
+                            <p>Peter Parker, alias Spider-Man, est<br>un super-héros évoluant dans<br>l'univers
+                            Marvel de la maison<br>d'édition Marvel Comics.</p>
+                        <div class="btndetail"><a href="#">Détail</a></div>
+                    </div>
+                    <div class="captain">
+                        <img src="img/captain-america.png">
+                            <h3>Captain America</h3>
+                            <p>Captain America est un super-<br>héros de bande dessinée évoluant<br>dans l'univers
+                            Marvelde la maison<br>d'édition Marvel Comics.</p>
+                        <div class="btndetail"><a href="#">Détail</a></div>
+                    </div>
+                    <div class="thor">
+                        <img src="img/thor.png">
+                            <h3>Thor</h3>
+                            <p>Thor est une divinité et un super-<br>héros évoluant dans l'univers<br>
+                            Marvel de la maison d'édition<br>Marvel Comics.</p>
+                        <div class="btndetail"><a href="#">Détail</a></div>
+                    </div>
+                </div>
+            </div>
+                <div class="videoground">
+                        <video width= "1423" autoplay loop muted>
+                            <source src="vid/avengers.mp4" type="video/mp4">
+                        </video>
+                        <div class="titrevid"><h1 id="cine">ADAPTATION AU CINEMA</h1></div>
+                    <div class="ironmanba">
+                        <iframe src="https://www.youtube.com/embed/QH3eAXZl3kY?si=iduJiWwH-RA-UzG4"> 
+                        </iframe>
+                        <div class="textironman">
+                            <h2>Iron Man</h2>
+                            <p>Anthony &laquoTony&raquo Stark, alias Iron Man,<br>est un super-héros évoluant
+                            dans<br>l'univers Marvelde la maison d'édition<br>Marvel Comics.</p>
+                        </div>
+                    </div>
+        
+                    <div class="captainba">
+                        <iframe src="https://www.youtube.com/embed/B9Org1_P8FM?si=sRObWSwsaGDRWe7x">
+                        </iframe>
+                    </div>
+                    <div class="textcaptain">
+                        <h2>Captain America</h2>
+                        <p>Captain America est un super-héros<br>de bande dessinée évoluant dans l'univers<br>
+                        Marvel de la maison d'édition<br>Marvel Comics.</p>
+                    </div>
+                </div>
+                <div class="titretabl">
+                    <h2>A VENIR</h2>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nom du film</th>
+                            <th>Date de sortie</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>Captain Marvel</td>
+                            <td >8 Mars 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Avengers Infinity War - Part 2</td>
+                            <td>3 Mai 2019</td>
+                        </tr>
+                        <tr>
+                           <td>Spider-Man Far From Home</td>
+                           <td>5 Juillet 2019</td>
+                        </tr>
+                        <tr>
+                            <td>Guardians Of The Galaxy vol.3</td>
+                            <td>2020</td>
+                        </tr>
+                </table>       
+    </main>
+    <footer>
+        <div class="contactlocal">
+            <div class="titrecontact"><h1 id="contact">CONTACTEZ-NOUS</h1></div>
+                <form method="POST" action="fichierDeTraitementDesDonnees.php">
+                    <label for="inputFirstname"><br>Votre prénom :<br></label>
+                    <input type="text" id="inputFirstname" name="firstname"/>
+
+                    <label for="e-mail"><br>Votre e-mail :<br></label>
+                    <input type="e-mail" id="e-mail" name="e-mail"/><br>
+
+                    Objet de la demande :<br>
+                    <select name="demande">
+                        <option>Evènement</option>
+                        <option>Reservation</option>
+                        <option>Renseignement</option>
+                    </select>
+
+                    <label for="msg"><br>Votre Message :<br></label>
+                    <textarea id="msg" name="demande" placeholder="Saisissez ici votre message"></textarea><br>
+
+                    <div class="bouton_envoyer"><input type="submit" value="Envoyer"></div>
+                </form>
+        </div>
+        <div class="mapgoogle">
+            <div class="titre_map"><h1>MARVEL DESIGN</h1><h2>STUDIO</h2></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.363019528917!2d2.7842816761292215!3d48.87035579986489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61d848dffae03%3A0xabef8c43cef35ba5!2sMarvel%20Design%20Studio!5e0!3m2!1sfr!2sfr!4v1740400982358!5m2!1sfr!2sfr" 
+            width="600" height="330" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="pied_de_page">
+            <h3>Copyright 2018...</h3>
+            <div class="logo_sociaux">
+                <a target="_blank" href="https://www.facebook.com/" class="lien-icone">
+                    <img src="img/logo-facebook.png" alt="Facebook" >
+                <a target="_blank" href="https://www.youtube.com/" class="lien-icone">
+                    <img src="img/logo-youtube.png" alt="Youtube" >
+                <a target="_blank" href="https://www.twitter.com/" class="lien-icone">
+                    <img src="img/logo-twitter.png" alt="Twitter" >
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

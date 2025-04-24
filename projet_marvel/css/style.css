@@ -1,0 +1,499 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+@font-face {
+    font-family: 'bebas_neueregular';
+    src: url('../fonts/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('../fonts/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Roboto", serif;
+}
+
+header {
+    background-color:#EF1223;
+    display: flex;
+    align-items: center;
+    padding: 0.3rem 9rem;
+    justify-content: space-between;
+    position: fixed;
+    width: 1140px;
+    z-index: 8;
+}
+
+ul.logo {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li.logo1 {
+    align-items: center;
+}
+
+li.logo2 {
+    padding-top: 10px;
+}
+
+
+.logo1 a {
+    font-family: 'bebas_neueregular';
+    color: white;
+    text-decoration: none;
+    font-size: 4cap;
+    padding-right: 2px;
+    
+}
+
+.logo2 a {
+    font-family: 'bebas_neueregular';
+    color: white;
+    text-decoration: none;
+    font-size: 3cap;
+    margin-left: 0px;
+    
+}
+
+
+ul.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li a.nonedeco {
+    text-decoration: none;
+}
+
+li a.deco {
+    text-decoration: underline overline;
+}
+
+li a {
+    color: white;
+    padding-right: 15px;
+}
+
+
+div.presentationperso {
+    background:linear-gradient(rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 1)) 0 0 no-repeat, url(../img/texture.jpeg) 100% 0% no-repeat;
+    background-size:cover ;
+    height: 450px;
+    
+    
+}
+
+.titrehaut {
+    position:absolute;
+    top: 25%;
+    left: 150px;
+}
+
+.titreh1 {
+    color:#EF1223;
+    background-color: white;
+    padding: 5px 5px 0px 5px;
+    width: 900px;
+    box-shadow: -5px 8px 5px rgb(124, 123, 123);
+}
+
+.titreh1 h1 {
+    font-size: 58px;
+    font-weight: 500;
+    
+}
+
+.titreh2 {
+    color: white;
+    background-color: #EF1223;
+    padding: 5px 5px;
+    width: 820px;
+    box-shadow: -5px 8px 5px rgb(124, 123, 123);
+}
+
+.titreh2 h2 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.h1presentation {
+    position: relative;
+    font-family: 'bebas_neueregular';
+    text-align: center;
+    top: 250px;
+    color: #EF1223;
+    
+}
+
+.h1presentation h1 {
+    padding-top: 270px;
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.presentationperso h3 {
+    padding-top: 20px;
+}
+
+.img_sheros {
+    
+    display: grid;
+    display: flex;
+    grid-template-rows: 10px 10px 10px;
+    
+    gap: 10px;
+}
+
+.ironman {
+    position:relative;
+    top: 250px;
+    text-align: center;
+    padding: 50px 8px 50px 180px;
+}
+
+.ironman img {
+    height: 100px;
+    width: 100px;
+}
+
+.ironman p {
+    padding-top: 30px;
+    width:max-content
+}
+
+.spiderman {
+    position:relative;
+    top: 250px;
+    text-align: center;
+    padding: 50px 8px 20px 8px;
+}
+
+.spiderman img {
+    height: 100px;
+    width: 100px;
+}
+
+.spiderman p {
+    padding-top: 30px;
+    width:max-content
+}
+
+.captain {
+    position:relative;
+    top: 250px;
+    text-align: center;
+    padding: 50px 8px 20px 8px;
+}
+
+.captain img {
+    height: 100px;
+    width: 100px;
+}
+
+.captain p {
+    padding-top: 30px;
+    width:max-content
+}
+
+.thor {
+    position:relative;
+    top: 250px;
+    text-align: center;
+    padding: 50px 8px 20px 8px;
+}
+
+.thor img {
+    height: 100px;
+    width: 100px;
+}
+
+.thor p {
+    padding-top: 30px;
+    width:max-content
+}
+
+
+div.btndetail {
+    color:#EF1223;
+    border: #EF1223 2px solid;
+    border-radius: 5px;
+    height: 25px;
+    width: 60px;
+    margin-left: 80px;
+    margin-top: 15px;
+
+}
+
+
+.btndetail a {
+    position: relative;
+    top: 3px;
+    font-weight: 600;
+   color:#EF1223;
+    text-decoration: none;
+}
+
+.videoground {
+    position: relative;
+    display: flex;
+    display: inline-block;
+    padding-top: 530px;
+    width: 100%;
+}
+
+.videoground video {
+    position: absolute;
+    z-index: 1;
+}
+
+
+.videoground::before {
+    position: absolute;
+    content:"";
+    z-index: 2;
+    background: no-repeat;
+    padding-top: 790px;
+    width: 1423px;
+    background-image: url("../img/fond-rouge.png");
+}
+
+.titrevid {
+    position: relative;
+    opacity: 1;
+    color: white;
+    z-index: 3;
+}
+
+.titrevid h1 {
+    position: relative;
+    display:inline-block;
+    font-family: 'bebas_neueregular';
+    font-size: 40px;
+    height: max-content;
+    width: max-content;
+    padding: 5px 10px;
+    left: 550px;
+    margin-top: 40px;
+}
+
+.ironmanba {
+    position: absolute;
+    opacity: 1;
+    z-index: 5;
+}
+
+.ironmanba iframe {
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+.textironman {
+    position: relative;
+    color: white;
+    left: 420px;
+    bottom: 140px;
+}
+
+.textironman h2 {
+    margin-bottom: 10px;
+}
+
+.textironman p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.captainba {
+    position: absolute;
+    opacity: 1;
+    z-index: 4;
+}
+
+.captainba iframe {
+    margin-top: 30px;
+    margin-left: 730px;
+}
+
+.textcaptain {
+    z-index: 5;
+    position: relative;
+    color: white;
+    margin-left: 1050px;
+    top: 40px;
+}
+
+.textcaptain h2 {
+    margin-bottom: 10px;
+}
+
+.textcaptain p {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.titretabl {
+    position: relative;
+    z-index: 5;
+    top: 180px;
+    margin-left: 660px;
+}
+
+.titretabl h2 {
+    font-family: 'bebas_neueregular';
+    font-size: 30px;
+    color: white;
+}
+
+
+table {
+    position: absolute;
+    z-index: 5;
+    margin-top: 300px;
+    left: 430px;
+    background-color: white;
+    color:black;
+    border: 3px;
+    border-style: solid;
+    border-color: #EF1223;
+    width: 550px;
+    height: 150px;
+}
+
+table th {
+    border-bottom: 1px solid #EF1223;
+    padding-bottom: 3px;
+
+}
+
+table td {
+   text-align: center;
+}
+
+footer .contactlocal {
+    height: 40px;
+    z-index: 10;
+}
+
+footer .titrecontact h1 {
+    position: relative;
+    font-family: 'bebas_neueregular';
+    color: #EF1223;
+    display: inline-block;
+    width: 300px;
+    margin-top: 570px;
+    font-size: 50px;
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+
+.contactlocal {
+    margin-left: 190px;
+
+
+}
+
+form input {
+    width: 500px;
+    height: 25px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+form select {
+    width: 505px;
+    height: 32px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    width: 503px;
+    height: 80px;
+    margin-top: 3px;
+    margin-bottom: 10px;
+}
+.bouton_envoyer input {
+    text-align: center;
+    background-color: white;
+    border-color: #EF1223;
+    border-width: 1px;
+    border-radius: 5px;
+    color: #EF1223;
+    width: 505px;
+    height: 32px;
+} 
+
+.mapgoogle {
+    margin-left: 740px;
+    padding-bottom: 50px;
+    margin-top: 500px;
+}
+
+.titre_map h1 {
+    display: inline-block;
+    font-family: 'bebas_neueregular';
+    color: #EF1223;
+    width: 480px;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 42px;
+    margin-left: 22px;
+}
+
+
+.titre_map h2 {
+    position: relative;
+    display: inline-block;
+    font-family: 'bebas_neueregular';
+    color: #EF1223;
+    width: 480px;
+    text-align: center;
+    font-size: 52px;
+    font-weight: 500;
+    left: 201px;
+    bottom: 57px;
+}
+
+.mapgoogle iframe {
+position: relative;
+bottom: 50px;
+
+}
+
+div.pied_de_page {
+    background-color: #EF1223;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding-left: 60px;
+    margin-top: 0px;
+    
+    
+}
+
+.pied_de_page h3 {
+    
+    color:white;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 870px;
+}
+
+
+.logo_sociaux img {
+    height: 30px;
+    width: 30px;
+    margin: 5px 10px;
+}
+
+
+
+
+
+
+
