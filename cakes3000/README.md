@@ -12,7 +12,12 @@ Pensez à télécharger le starter pour avoir l'ensemble des maquettes (Desktop,
 Let's go 💫
 
 ## Ne pas oublier !
-- de réinstaller la librairie bootstrap (css & js)
-- De réinstaller la librairie fontAwessome (icones)
+### Bootstrap
+- Continuer à utiliser les CDN Bootstrap dans le index.html
+
+ou
+
+- Réinstaller la librairie bootstrap (css & js)
+- Réinstaller la librairie FontAwessome (icones)
 
 [Sommaire](../)
