@@ -1,0 +1,85 @@
+.jt-sidebar img {
+  height: auto;
+  width: 100%;
+}
+@media screen and (max-width: 575.98px) {
+  .jt-sidebar img {
+    margin-bottom: 2rem;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Winky Rough", sans-serif;
+  color: white;
+  background-image: url(../img/fond-campagne.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.jt-section {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h1, h2 {
+  display: inline-block;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 4rem;
+}
+
+.description-beer {
+  margin-bottom: 3rem;
+}
+
+.btn-link a {
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 600;
+  background-color: rgb(135, 111, 77);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+}
+.btn-link a:hover {
+  background-color: rgb(118, 87, 42);
+}
+
+@media (max-width: 575.98px) {
+  .jt-row {
+    margin: 10px auto;
+    max-width: 90%;
+    text-align: center;
+  }
+  .jt-row h1, .jt-row h2 {
+    font-size: 2.3rem;
+  }
+  .jt-row .btn-link a {
+    background-color: rgb(247, 241, 233);
+    color: rgb(126, 105, 74);
+  }
+  .jt-row .btn-link a:hover {
+    background-color: rgb(245, 225, 198);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,79 @@
+@use "variables" as v;
+@use "mixins" as m;
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Winky Rough", sans-serif;
+    color: v.$color-text;
+    background-image: url(../img/fond-campagne.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.jt-section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    display: inline-block;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 300;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: 800;
+    @include m.margin-bottom(4rem);
+}
+
+.description-beer {
+    @include m.margin-bottom;
+}
+
+.btn-link {
+    a {
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 600;
+        background-color: v.$link-bg;
+        color: v.$link-color;
+        padding: 1rem 2rem;
+        border-radius: .8rem;
+        &:hover {
+            background-color: v.$link-bg-hover;
+        }
+    }
+}
+
+.jt-row {
+    @media (max-width: 575.98px){
+        margin: 10px auto;
+        max-width: 90%;
+        text-align: center;
+        h1, h2 {
+            font-size: 2.3rem;
+        }
+        .btn-link {
+            a {
+                background-color: v.$link-bg-mobil;
+                color: v.$link-bg-mobil-color;
+                &:hover {
+                    background-color: v.$link-bg-mobil-hover;
+                }
+            }
+        }
+    }
+}

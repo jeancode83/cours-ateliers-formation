@@ -1,0 +1,10 @@
+@use "mixins" as m;
+.jt-sidebar {
+    img {
+        height: auto;
+        width: 100%;
+        @media screen and (max-width: 575.98px){
+            @include m.margin-bottom(2rem);
+        }
+    }
+}
