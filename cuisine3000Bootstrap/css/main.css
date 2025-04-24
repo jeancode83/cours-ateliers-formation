@@ -1,0 +1,29 @@
+
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+nav {
+    height: 6rem;
+    background: linear-gradient(rgb(255, 193, 6), rgb(242, 75, 8));
+    
+}
+
+span {
+    font-size: 3rem;
+    color: white;
+}
+
+
+header ,.doc_recettes {
+    padding: 2rem 1rem;
+}
+
+img {
+    width: 100%;
+}
