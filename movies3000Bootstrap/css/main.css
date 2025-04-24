@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Playfair Display", serif;
+}
+
+.navbar {
+    background-color: #2E72D7;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar a {
+    font-size: 2rem;
+}
+
+.navbar a:hover {
+    color: rgb(42, 234, 234);
+}
+
+
+.movie {
+    position: relative;
+    overflow: hidden;
+}
+
+h2 {
+    text-decoration: underline;
+    font-size: 3rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.movie img {
+    width: 100%;
+    transition: all 0.5s;
+}
+
+.movie:hover img {
+    transform: scale(1.1);
+}
+
+.movie figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(5,37,6,0);
+    color: rgba(265,265,265,0);
+    padding: 2rem 1rem;
+    transform: translateY(-1rem);
+    transition: all(0.5s);
+}
+
+.movie:hover figcaption {
+    background-color: rgba(5,37,6,0.65);
+    color: white;
+    transform: translateY(0);
+}
+
+.navbar a {
+    animation-name: apparition;
+    animation-duration: 3s;
+    animation-delay: 1.5s;
+    animation-iteration-count: 3;
+}
+
+@keyframes  apparition {
+    0% {
+        color: #2E72D7;
+    }
+    
+    100% {
+        color: white;
+    }
+}
+
+
+
