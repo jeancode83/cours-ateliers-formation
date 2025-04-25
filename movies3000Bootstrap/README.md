@@ -10,4 +10,12 @@ Desktop : affichage sur une seule ligne
 Mobile : affichage en colonne
 Attention à bien penser à l'imbrication des éléments et donc des éléments row de Bootstrap 😊
 
+## Ne pas oublier !
+### Bootstrap
+- Continuer à utiliser les CDN Bootstrap dans le index.html
+
+ou
+
+- Réinstaller la librairie bootstrap (css)
+
 [Sommaire](../)
