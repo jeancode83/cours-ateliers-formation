@@ -1,4 +1,7 @@
 # Projet cours formation
+
+Liste des ateliers de ma formation développeur Web Elorri 2025.
+
 ## Projets
 - Sommaire [Code](https://github.com/jeancode83/cours-ateliers-formation) / [Démo](https://jeancode83.github.io/cours-ateliers-formation)
     - Beers3000 [Code](https://github.com/jeancode83/cours-ateliers-formation/tree/main/beers3000) / [Démo](https://jeancode83.github.io/cours-ateliers-formation/beers3000)
