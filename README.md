@@ -15,3 +15,7 @@ Liste des ateliers de ma formation développeur Web Elorri 2025.
 8) Jeu nombre mystère [Code](https://github.com/jeancode83/cours-ateliers-formation/tree/main/jeuDuNombreMystere) / [Démo](https://jeancode83.github.io/cours-ateliers-formation/jeuDuNombreMystere)  
 9) Distributeur boissons en Js [Code](https://github.com/jeancode83/cours-ateliers-formation/tree/main/distriBoissonsJs) / [Démo](https://jeancode83.github.io/cours-ateliers-formation/distriBoissonsJs) 
 10) ...
+
+
+## Mes projets de test personnels
+1) Personnel 1 portfolio [Code](https://github.com/jeancode83/cours-ateliers-formation/tree/main/perso-portfolio) / [Démo](https://jeancode83.github.io/cours-ateliers-formation/perso-portfolio)
