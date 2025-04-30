@@ -1,0 +1,8 @@
+@use "variables" as v;
+
+.jt-section-main {
+    .jt-main {
+        background-color: #FF99CC;
+    }
+    min-height: calc(100vh - 60px);
+}

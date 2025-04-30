@@ -1,0 +1,6 @@
+@use "variables" as v;
+
+.jt-sidebar {
+    background-color: v.$bg-sidebar;
+    min-height: calc(100vh - 60px);
+}

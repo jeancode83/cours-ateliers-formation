@@ -1,0 +1,47 @@
+.jt-bg-cover {
+  background-size: cover;
+  background-position: center center;
+  min-height: 300px;
+  background-color: rgb(213, 212, 211);
+}
+
+.jt-section-navbar {
+  background-color: rgb(49, 58, 70);
+  color: rgb(250, 251, 254);
+}
+.jt-section-navbar ul li a {
+  color: rgb(250, 251, 254);
+}
+.jt-section-navbar ul li a:hover {
+  color: rgb(180, 196, 219);
+}
+.jt-section-navbar ul li a.nav-link.active {
+  color: rgb(180, 196, 219);
+}
+.jt-section-navbar .navbar.bg-body-tertiary {
+  background-color: inherit !important;
+}
+.jt-section-navbar .navbar .navbar-brand {
+  color: rgb(250, 251, 254);
+}
+.jt-section-navbar .navbar .jt-btn-menu {
+  margin-right: 8px;
+}
+
+.jt-sidebar {
+  background-color: rgb(250, 251, 254);
+  min-height: calc(100vh - 60px);
+}
+
+.jt-section-main {
+  min-height: calc(100vh - 60px);
+}
+.jt-section-main .jt-main {
+  background-color: #FF99CC;
+}
+
+body {
+  background-color: rgb(234, 230, 230);
+}
+
+/*# sourceMappingURL=main.css.map */
