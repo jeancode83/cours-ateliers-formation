@@ -89,42 +89,53 @@ for (let index = 0; index < joueurs.length; index++) {
 
 // Créer une classe Player avec des propriétés firstname, lastname et position
 class Player {
-    constructor(prenom, nom, position) {
+
+    // En initialisant mon objet Player je lui assigne des valeurs
+    constructor(prenom, nom, position, equipe) {
         this.prenom = prenom;
         this.nom = nom;
         this.position = position;
+        this.equipe = equipe;
     }
-    getFullName(prenom, nom, position) {
-        return `${this.prenom} ${this.nom} ${this.position}`;  
+
+    // Méthode permettant de récupérer des paramètres du nom de mon objet Player
+    getFullName() {
+        return `${this.prenom} ${this.nom} ${this.position} ${this.equipe}`;  
     }
-    changePosition(prenom, nom, position) {
-        return `${this.prenom} ${this.nom} ${this.position}`;
+
+    // Fonction permettant de récupérer la postion
+    getPosition() {
+        return this.position;
+    }
+
+    // Fonction permettant d'assigner une nouvelle position
+    setPosition(newPosition) {
+        this.position = newPosition;
+    }
+
+    // Fonction permettant de récupérer le nom
+    getName() {
+        return this.nom;
+    }
+
+    // Fonction permettant d'assigner un nouveau nom
+    setName(newName) {
+        this.nom = newName;
     }
 }
 // Créer un objet Player pour le joueur Raphaël Varane (Défenseur)
-let play = new Player("Raphaël", "Varane", "Défenseur");
+let play = new Player("Raphaël", "Varane", "Défenseur", "France");
 console.log(play.getFullName());
+play.setPosition("Défenseur central");
+console.log(play.getFullName());
+play.setName("Varaneto")
+console.log(play.getFullName());
+
+
 
 //Ajouter une méthode dans la classe pour modifier le poste d'un joueur
 /**Voir ligne 100**/
 
 // Appeler la méthode sur l'objet Raphaël Varane afin de modifier son poste de Défenseur à Défenseur central
-play = new Player("Raphaël", "Varane", "Défenseur central");
-console.log(play.changePosition());
-
-// Test fonction EventListener
-let wp = document.getElementById("app");
-console.log(wp);
-if (wp) {
-    wp.append(play.changePosition());
-    wp.addEventListener("mouseenter", function() {
-        console.log("enter");
-        wp.style.color = "#ff99cc";
-    });
-    wp.addEventListener("mouseout", function() {
-        console.log("out");
-        wp.style.color = "#000000";
-    });
-}
-
-
+//play = new Player("Raphaël", "Varane", "Défenseur central");
+//console.log(play.changePosition());
