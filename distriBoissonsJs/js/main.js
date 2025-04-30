@@ -2,6 +2,18 @@ function roundDecimal(nb, precision) {
 	var tmp = Math.pow(10, precision);
 	return Math.round(nb * tmp) / tmp;
 }
+
+function displayPrice(number) {
+	//return new Intl.NumberFormat(("fr-FR"), {style: "currency", currency:"EUR"}).Format(number);
+	let formater = new Intl.NumberFormat('fr-FR', {
+		style: 'currency',
+		currency: 'EUR',
+	});
+	console.log("formater", formater);
+	
+	return formater.format(number)
+}
+
 var boissonSelect, paiement, manqMonnaie;
 var boissons = [
 	{
@@ -18,12 +30,14 @@ var boissons = [
 		prix: 1.00
 	}
 ];
+
 console.table(boissons);
+
 let msgIntro = "Veuillez sélectionner votre boisson\n"
-for (let index = 0; index < boissons.length; index++) {
-	msgIntro += "tapez " + (index +1) + " pour sélectionner un " + boissons[index].nom + " à " + boissons[index].prix + " €.\n";
-	
+for (let index = 0; index < boissons.length; index++) {	
+	msgIntro += "tapez " + (index +1) + " pour sélectionner un " + boissons[index].nom + " à " + displayPrice(boissons[index].prix) + ".\n";	
 }
+
 i = 0;
 do {
 	boissonSelect = Number(prompt(msgIntro))
@@ -45,7 +59,7 @@ if (boissonSelect) {
 	let paiementManqMonnaie;
 
 	// On stock dans la variable paiement le paiement de la boisson sélectionnée
-	paiement = Number(prompt("Vous avez choisi un " + boissonCourante + " veuillez régler la somme de " + prixCourant + " €."))
+	paiement = Number(prompt("Vous avez choisi un " + boissonCourante + ".\nVeuillez régler la somme de " + displayPrice(prixCourant) + "."))
 
 	// On lance une boucle tant que le paiement est inférieur au prixCourant de la boisson sélectionnée
 	while (roundDecimal(paiement, 2) < prixCourant) {
@@ -54,7 +68,7 @@ if (boissonSelect) {
 		paiementManqMonnaie = roundDecimal((prixCourant - paiement), 2);
 
 		// On stock dans la variable manqMonnaie l'appoint soumis par le client
-		manqMonnaie = Number(prompt("Il manque " + paiementManqMonnaie + " €, merci de régler l'appoint."));
+		manqMonnaie = Number(prompt("Il manque " + displayPrice(paiementManqMonnaie) + ",\nmerci de régler l'appoint."));
 		
 		// J'additionne le paiement + manqMonnaie uniquement si il rempli la condition manqMonnaie est > à 0
 		if (manqMonnaie > 0) {
@@ -63,18 +77,18 @@ if (boissonSelect) {
 	} 
 
 	// On créé une variable msg afin de préparer le message de récupération de la boisson
-	let msg = "Nous avons bien reçu le paiement " + paiement + " €. ";
+	let msg = "Nous avons bien reçu le paiement " + displayPrice(paiement) + " .\n";
 	
 	// On vérifie si le paiement client est supérieur au prix de la boisson et si il y a un appoint à effectuer
 	if (paiement > prixCourant) {
 		// Je calcule paiement - prixCourant et j'y stock la valeur d'appoint dans paiementManqMonnaie
 		paiementManqMonnaie = roundDecimal((paiement - prixCourant), 2);
 		// On concatène à la viariable msg  l'information du montant rendu monnaie
-		msg += "votre monnaie de " + paiementManqMonnaie + " € et ";
+		msg += "Votre monnaie de " + displayPrice(paiementManqMonnaie) + " et ";
 	}
 
 	// On concatène à la viariable msg le message de récupération de la boisson
-	msg += "Votre " + boissonCourante + " est prêt.";
+	msg += "votre " + boissonCourante + " sont à disposition.";
 
 	// On affiche le message au client 
 	alert(msg);
