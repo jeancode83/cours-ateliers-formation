@@ -131,6 +131,7 @@ console.log(play.getFullName());
 play.setName("Varaneto")
 console.log(play.getFullName());
 
+console.log("###########");
 
 
 //Ajouter une méthode dans la classe pour modifier le poste d'un joueur
@@ -139,3 +140,79 @@ console.log(play.getFullName());
 // Appeler la méthode sur l'objet Raphaël Varane afin de modifier son poste de Défenseur à Défenseur central
 //play = new Player("Raphaël", "Varane", "Défenseur central");
 //console.log(play.changePosition());
+
+/**
+ * Exercice mise en application des classes
+ */
+
+//Création de la classe principale
+class Vehicule {
+    constructor(marque, modele, kilometrage, annee) {
+        this.marque = marque;
+        this.modele = modele;
+        this.kilometrage = kilometrage;
+        this.annee = annee;
+    }
+    getDisplay() {
+        return `Vehicules:\nMarque: ${this.marque}\nModèle: ${this.modele}\nKilomètrage: ${this.kilometrage}\nAnnée: ${this.annee}`;  
+    }
+}
+let vehicule = new Vehicule("Peugeot", "207sw", 165400, 2007);
+console.log(vehicule.getDisplay());
+
+// Extension de la classe Vehicule générique pour créer des véhicules de type voiture
+// Ajout des paramètres climatisation et immatriculation
+// Overide de la fonction getDisplay pour afficher les nouveaux paramètres ajoutés 
+class Voiture extends Vehicule {
+    // Overide du constructeur (pour ajouter les nouveaux paramètres)
+    constructor(marque, modele, kilometrage, annee, climatisation, immatriculation) {
+        // Rappel des paramètres de la classe Vehicule parents avec la fonction super()
+        super(marque, modele, kilometrage, annee);
+        // Initialisation des nouveaux paramètres de la classe Vehicule
+        this.climatisation = climatisation; 
+        this.immatriculation = immatriculation;   
+    }
+    // Overide de la fonction getDisplay avec pretty formatage des infos
+    getDisplay() {
+        let msg = "Voiture: \n";
+        msg += `Immatriculation: ${this.immatriculation}\n`;
+        msg += `Marque: ${this.marque}\n`;
+        msg += `Modèle: ${this.modele}\n`;
+        msg += `Kilomètrage: ${this.kilometrage}\n`;
+        msg += `Année: ${this.annee}\n`;
+        msg += `-- Option(s) --\n`;
+        // Utilisation des conditions ternaires (si variable ? Alors : sinon)
+        msg += `Climatisation: ${this.climatisation ? "oui" : "non."}`;
+
+        return msg;  
+    }
+}
+
+let voiture1 = new Voiture("Audi", "A8", 12000, 2024, true, "CD-286-YA");
+console.log("Voiture1 ---\n", voiture1.getDisplay());
+
+let voiture2 = new Voiture("BMW", "série2", 45000, 2020, false, "JW-290-PD");
+console.log("Voiture2 ---\n", voiture2.getDisplay());
+
+// Extension de la classe Vehicule générique pour créer des véhicules de type moto
+// Création d'une nouvelle méthode getWheels()
+// Overide de getDisplay(), pour le nouvel affichage
+class Moto extends Vehicule {
+    getWheels() {
+        return 2;
+    }
+    getDisplay() {
+        let msg = "Moto: \n";
+        msg += `Marque: ${this.marque}\n`;
+        msg += `Modèle: ${this.modele}\n`;
+        msg += `Kilomètrage: ${this.kilometrage}\n`;
+        msg += `Année: ${this.annee}\n`;
+        msg += `-- Particularité(s) --\n`;
+        msg += `Nombre de roues: ${this.getWheels()}`;
+        return msg;  
+    }
+}
+
+let moto1 = new Moto("Solex", "Silex", 900000, "1200");
+console.log("Moto1 ---\n", moto1.getDisplay());
+console.log("Wheels: ", moto1.getWheels());
