@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(13, 13, 14);
+}
+
+body img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-family: "Codystar", sans-serif;
+    color: azure;
+}
