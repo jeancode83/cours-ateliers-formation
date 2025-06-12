@@ -102,11 +102,11 @@ body {
 }
 
 .jt-bg-nouveau-client {
-  background-image: url(../../img/Lille-Seminaires.jpg);
+  background-image: url(./../../img/lille-seminaires.jpg);
 }
 
 .jt-bg-depart-client {
-  background-image: url(../../img/Lille-Hall.jpg);
+  background-image: url(./../../img/lille-hall.jpg);
 }
 
 .jt-section-navbar {
