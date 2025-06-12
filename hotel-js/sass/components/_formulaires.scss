@@ -1,0 +1,106 @@
+@use "../variables" as v;
+
+.jt-form-accueil {
+	padding: 0 auto;
+
+	.jt-form-restau {
+		background-color: v.$bg-black;
+		color: white;
+		max-width: 1280px;
+		margin: 3rem 2rem;
+		padding: 2.5rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		gap: 1.2rem;
+		justify-content: center;
+		align-items: normal;
+
+		@media (max-width: 960px) {
+			flex-wrap: wrap;
+			margin: 2rem 0;
+		}
+
+		input {
+			width: auto;
+
+			&.jt-form-control {
+				width: 100%;
+				height: 4rem;
+				font-size: 1.2rem;
+				padding: 0 1rem;
+			}
+		}
+
+		select {
+			&.jt-form-select {
+				width: 100%;
+				height: 4rem;
+				font-size: 1.2rem;
+				padding: 0 1rem;
+			}
+		}
+
+		button {
+			&.jt-form-btn {
+				width: 100%;
+				height: 4rem;
+				font-size: 1.2rem;
+				padding: 0 1rem;
+				margin-top: 1.6rem;
+				color: v.$color-white;
+				background-color: v.$color-primary;
+				gap: .4rem;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				min-width: max-content;
+				border: none;
+				margin: 0;
+
+				&:hover {
+					background-color: v.$color-primary-hover;
+				}
+			}
+		}
+
+		.jt-form-floating {
+			flex: 0 0 calc((100% / 6) - 1rem);
+			display: flex;
+			align-items: flex-start;
+			flex-direction: column;
+			justify-content: flex-end;
+
+			&.jt-form-floating-submit {
+				display: flex;
+				align-items: flex-end;
+			}
+
+			&.jt-form-floating-petit-dej {
+				justify-content: flex-start;
+			}
+
+			.jt-input-oui-non {
+				margin-top: 1rem;
+			}
+
+			@media (max-width: 960px) {
+				flex: 0 0 calc((100% / 4) - 1rem);
+
+				&:has([for="jt-first-name"]),
+				&:has([for="jt-name"]) {
+					flex: 0 0 calc((100% / 2) - 1rem);
+				}
+			}
+
+			@media (max-width: 660px) {
+				flex: 0 0 100%;
+				&:has([for="jt-first-name"]),
+				&:has([for="jt-name"]) {
+					flex: 0 0 100%;
+				}
+			}
+		}
+	}
+}

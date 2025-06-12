@@ -1,0 +1,53 @@
+@use "../variables" as v;
+
+
+.jt-ul-clean {
+    display: inherit;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.jt-section {
+    margin: 0;
+    padding: 0;
+    .jt-container {
+        width: 100%;
+        max-width: v.$container-width;
+        margin: 0 auto;
+    }
+}
+
+.jt-grid {
+    display: flex;
+    flex-direction: row;
+}
+
+.jt-grid-align-center {
+    align-items: center;
+}
+
+.jt-grid-between {
+    justify-content: space-between;
+}
+
+.jt-affichage-facture {
+    background-color: v.$color-primary;
+    color: v.$color-white;
+    display: flex;
+    justify-content: center;
+    height: 12rem;
+}
+
+.jt-section-footer {
+    padding: 5rem 0;
+    color: white;
+    h2 {
+        text-align: center;
+    }
+}
+
+.jt-msg-facture {
+    padding: 2rem 2.5rem;
+}

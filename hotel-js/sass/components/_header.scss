@@ -1,0 +1,24 @@
+@use "../variables" as v;
+
+.jt-section-header {
+    .jt-header-info {
+        justify-content: center;
+        align-items: center;
+        min-height: v.$header-height;
+        .jt-header-affiche {
+            max-width: 31rem;
+            text-align: center;
+            padding: 2rem;
+            font-family: Garamond, serif;
+            font-weight: 100;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .jt-line-bottom {
+                border-bottom: v.$color-primary .2rem solid;
+                width: 5rem;
+            }
+        }
+    }
+}
+

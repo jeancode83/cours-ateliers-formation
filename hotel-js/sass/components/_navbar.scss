@@ -1,0 +1,33 @@
+@use "../variables" as v;
+
+.jt-section-navbar {
+    min-height: 8rem;
+    padding: 3rem 2rem;
+    position: sticky;
+    top: 0;
+    @media (max-width: 640px) {
+        font-size: 1.3rem;
+    }
+    
+    .jt-logo {
+        width: 20rem;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .jt-menu-nav {
+        ul {
+            gap: 1.5rem;
+            li {
+                a {
+                    color: v.$color-white;
+                    text-decoration: none;
+                    &:hover {
+                        color: rgb(185, 192, 198);
+                    }
+                }
+            }
+        }
+    }
+}

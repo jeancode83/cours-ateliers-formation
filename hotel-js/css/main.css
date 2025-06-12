@@ -1,0 +1,252 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  scroll-padding-top: 25%;
+}
+
+body {
+  font-size: 1.62rem;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.jt-msg-bienvenue {
+  text-align: center;
+  max-width: 1280px;
+  margin: 3rem 2rem;
+  background-color: rgb(178, 148, 116);
+  font-size: larger;
+  padding: 1rem;
+  color: white;
+}
+
+.jt-ul-clean {
+  display: inherit;
+  list-style-type: none;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+}
+
+.jt-section {
+  margin: 0;
+  padding: 0;
+}
+.jt-section .jt-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.jt-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.jt-grid-align-center {
+  align-items: center;
+}
+
+.jt-grid-between {
+  justify-content: space-between;
+}
+
+.jt-affichage-facture {
+  background-color: rgb(178, 148, 116);
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 12rem;
+}
+
+.jt-section-footer {
+  padding: 5rem 0;
+  color: white;
+}
+.jt-section-footer h2 {
+  text-align: center;
+}
+
+.jt-msg-facture {
+  padding: 2rem 2.5rem;
+}
+
+.jt-bg-grey {
+  background-color: rgb(54, 54, 54);
+}
+
+.jt-bg-white-o-6 {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.jt-bg-black {
+  background-color: rgb(22, 22, 21);
+}
+
+.jt-color-white {
+  color: white;
+}
+
+.jt-color-footer {
+  background-color: rgb(178, 148, 116);
+}
+
+.jt-bg-cover {
+  background-position: center center;
+  background-size: cover;
+}
+
+.jt-bg-nouveau-client {
+  background-image: url(../../img/Lille-Seminaires.jpg);
+}
+
+.jt-bg-depart-client {
+  background-image: url(../../img/Lille-Hall.jpg);
+}
+
+.jt-section-navbar {
+  min-height: 8rem;
+  padding: 3rem 2rem;
+  position: sticky;
+  top: 0;
+}
+@media (max-width: 640px) {
+  .jt-section-navbar {
+    font-size: 1.3rem;
+  }
+}
+.jt-section-navbar .jt-logo {
+  width: 20rem;
+}
+.jt-section-navbar .jt-logo img {
+  width: 100%;
+  height: auto;
+}
+.jt-section-navbar .jt-menu-nav ul {
+  gap: 1.5rem;
+}
+.jt-section-navbar .jt-menu-nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+.jt-section-navbar .jt-menu-nav ul li a:hover {
+  color: rgb(185, 192, 198);
+}
+
+.jt-section-header .jt-header-info {
+  justify-content: center;
+  align-items: center;
+  min-height: 35rem;
+}
+.jt-section-header .jt-header-info .jt-header-affiche {
+  max-width: 31rem;
+  text-align: center;
+  padding: 2rem;
+  font-family: Garamond, serif;
+  font-weight: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.jt-section-header .jt-header-info .jt-header-affiche .jt-line-bottom {
+  border-bottom: rgb(178, 148, 116) 0.2rem solid;
+  width: 5rem;
+}
+
+.jt-form-accueil {
+  padding: 0 auto;
+}
+.jt-form-accueil .jt-form-restau {
+  background-color: rgb(22, 22, 21);
+  color: white;
+  max-width: 1280px;
+  margin: 3rem 2rem;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.2rem;
+  justify-content: center;
+  align-items: normal;
+}
+@media (max-width: 960px) {
+  .jt-form-accueil .jt-form-restau {
+    flex-wrap: wrap;
+    margin: 2rem 0;
+  }
+}
+.jt-form-accueil .jt-form-restau input {
+  width: auto;
+}
+.jt-form-accueil .jt-form-restau input.jt-form-control {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+.jt-form-accueil .jt-form-restau select.jt-form-select {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+}
+.jt-form-accueil .jt-form-restau button.jt-form-btn {
+  width: 100%;
+  height: 4rem;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  margin-top: 1.6rem;
+  color: white;
+  background-color: rgb(178, 148, 116);
+  gap: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  min-width: max-content;
+  border: none;
+  margin: 0;
+}
+.jt-form-accueil .jt-form-restau button.jt-form-btn:hover {
+  background-color: rgb(161, 134, 104);
+}
+.jt-form-accueil .jt-form-restau .jt-form-floating {
+  flex: 0 0 calc(16.6666666667% - 1rem);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.jt-form-accueil .jt-form-restau .jt-form-floating.jt-form-floating-submit {
+  display: flex;
+  align-items: flex-end;
+}
+.jt-form-accueil .jt-form-restau .jt-form-floating.jt-form-floating-petit-dej {
+  justify-content: flex-start;
+}
+.jt-form-accueil .jt-form-restau .jt-form-floating .jt-input-oui-non {
+  margin-top: 1rem;
+}
+@media (max-width: 960px) {
+  .jt-form-accueil .jt-form-restau .jt-form-floating {
+    flex: 0 0 calc(25% - 1rem);
+  }
+  .jt-form-accueil .jt-form-restau .jt-form-floating:has([for=jt-first-name]), .jt-form-accueil .jt-form-restau .jt-form-floating:has([for=jt-name]) {
+    flex: 0 0 calc(50% - 1rem);
+  }
+}
+@media (max-width: 660px) {
+  .jt-form-accueil .jt-form-restau .jt-form-floating {
+    flex: 0 0 100%;
+  }
+  .jt-form-accueil .jt-form-restau .jt-form-floating:has([for=jt-first-name]), .jt-form-accueil .jt-form-restau .jt-form-floating:has([for=jt-name]) {
+    flex: 0 0 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

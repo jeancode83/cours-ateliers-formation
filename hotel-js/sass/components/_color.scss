@@ -1,0 +1,34 @@
+@use "../variables" as v;
+
+// style global
+.jt-bg-grey {
+    background-color: v.$bg-grey;
+}
+
+.jt-bg-white-o-6 {
+    background-color: v.$bg-white-o-6;
+}
+
+.jt-bg-black {
+    background-color: v.$bg-black;
+}
+
+.jt-color-white {
+    color: v.$color-white;
+}
+
+.jt-color-footer {
+    background-color: v.$color-primary;
+}
+
+.jt-bg-cover {
+    background-position: center center;
+    background-size: cover;
+}
+// Style local
+.jt-bg-nouveau-client {
+    background-image: url(../../img/Lille-Seminaires.jpg);
+}
+.jt-bg-depart-client {
+    background-image: url(../../img/Lille-Hall.jpg);
+}

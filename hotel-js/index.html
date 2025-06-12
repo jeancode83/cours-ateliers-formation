@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation-Hotel Olivarius</title>
+    <link rel="stylesheet" href="./css/jt-icons/style.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <header class="jt-section jt-bg-grey jt-section-navbar">
+        <div class="jt-container">
+            <nav class="jt-navbar jt-grid jt-grid-between">
+                <div class="jt-logo">
+                    <img src="./img/Logoblanc.png" alt="Nom de l'hotel, Olivarius">
+                </div>
+                <div class="jt-menu-nav">
+                    <ul class="jt-ul-clean jt-grid">
+                        <li>
+                            <a href="#jt-first-name">
+                                <span class="jt-i jt-i-person_add_alt_1"></span>
+                                Nouveau client
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#jt-first-name-sortie">
+                                <span class="jt-i jt-i-person_remove"></span>
+                                Départ client
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <aside class="jt-section jt-section-header jt-bg-nouveau-client jt-bg-cover">
+        <div class="jt-container">
+            <div class="jt-header-info jt-grid">     
+                <div class="jt-header-affiche jt-bg-white-o-6">
+                    <h2>Accueil nouveau client</h2>
+                    <div class="jt-line-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <main class="jt-section jt-section-formulaire-entree">
+        <div class="jt-container">
+            <div class="jt-msg-bienvenue"></div>
+        </div>
+        <div class="jt-container">     
+            <div class="jt-form-accueil">
+                <form class="jt-form-restau" data-jt-submit="entree" enctype="multipart/form-data" method="post">
+                    <div class="jt-form-floating">
+                        <label for="jt-first-name">
+                            <span class="jt-i jt-i-contacts"></span>
+                            Prénom
+                        </label>
+                        <input disabled type="text" class="jt-form-control jt-disabled" id="jt-first-name" placeholder="Prénom" value=""name="prenom" required="required">
+                    </div>
+                    <div class="jt-form-floating">
+                        <label for="jt-name">
+                            <span class="jt-i jt-i-face"></span>
+                            Nom
+                        </label>
+                        <input disabled type="text" class="jt-form-control jt-disabled" id="jt-name" placeholder="Nom" value="" name="nom" required="required">
+                    </div>
+                    <div class="jt-form-floating">
+                        <label for="jt-nb-nuits">
+                            <span class="jt-i jt-i-bedtime"></span>
+                            Nombre de nuits
+                        </label>
+                        <input type="number" class="jt-form-control" min="1" max="30" id="jt-nb-nuits" placeholder="Nombre de nuits"
+                            value="1" name="nombre_nuits" required="required">
+                    </div>
+                    <div class="jt-form-floating">
+                        <label for="jt-nb-personnes">
+                            <span class="jt-i jt-i-king_bed"></span>
+                            Chambre
+                        </label>
+                        <select title="nb personnes" class="jt-form-select" id="jt-nb-personnes" name="nb_personnes" required="required">
+                            <option selected value="1">Une personne</option>
+                            <option value="2">Deux personnes</option>
+                            <option value="3">Quatres personnes</option>
+                            <option value="4">Loft</option>
+                        </select>
+                    </div>
+                    <div class="jt-form-floating jt-form-floating-petit-dej">
+                        <label for="jt-petit-dej">
+                            <span class="jt-i jt-i-bakery_dining"></span>
+                            Petit déjeuner ?
+                        </label>
+                        <div class="jt-grid jt-input-oui-non" id="jt-petit-dej">
+                            <div>
+                                <input type="radio" id="oui" class="jt-form-radio" name="petit_dej" value="oui" checked />
+                                <label for="oui">oui</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="non" class="jt-form-radio" name="petit_dej" value="non" />
+                                <label for="non">non</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jt-form-floating">
+                        <button disabled title="Enregistrer le client" class="jt-form-btn jt-grid jt-grid-align-center jt-disabled" type="submit">
+                            <span>Enregistrer le client</span>
+                            <span class="jt-i jt-i-calendar_today"></span>               
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <aside class="jt-section jt-section-header jt-bg-depart-client jt-bg-cover">
+        <div class="jt-container">
+            <div class="jt-header-info jt-grid">     
+                <div class="jt-header-affiche jt-bg-white-o-6">
+                    <h2>Départ client</h2>
+                    <div class="jt-line-bottom"></div>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <aside class="jt-section jt-section-formulaire-sortie">
+        <div class="jt-container">     
+            <div class="jt-form-accueil">
+                <form class="jt-form-restau" data-jt-submit="sortie">
+                    <div class="jt-form-floating">
+                        <label for="jt-first-name-sortie">
+                            <span class="jt-i jt-i-contacts"></span>
+                            Prénom
+                        </label>
+                        <input type="text" class="jt-form-control" id="jt-first-name-sortie" placeholder="Prénom" value="" name="prenom">
+                    </div>
+                    <div class="jt-form-floating">
+                        <label for="jt-name-sortie">
+                            <span class="jt-i jt-i-face"></span>
+                            Nom
+                        </label>
+                        <input type="text" class="jt-form-control" id="jt-name-sortie" placeholder="Nom" value="" name="nom">
+                    </div>
+                    <div class="jt-form-floating">
+                        <button title="Enregistrer le client" class="jt-form-btn jt-grid jt-grid-align-center" type="submit">
+                            <span>Rechercher le client</span>
+                            <span class="jt-i jt-i-person_search"></span>               
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </aside>
+    <aside class="jt-section jt-color-footer jt-section-footer">
+        <div class="jt-container">
+            <h2>Facture du client</h2>
+            <div class="jt-msg-facture"></div>
+        </div>
+    </aside>
+    <script type="module" src="./js/main.js"></script>
+</body>
+
+</html>

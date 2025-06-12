@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'jt-icons';
+  src:  url('fonts/jt-icons.eot?iwr6rw');
+  src:  url('fonts/jt-icons.eot?iwr6rw#iefix') format('embedded-opentype'),
+    url('fonts/jt-icons.ttf?iwr6rw') format('truetype'),
+    url('fonts/jt-icons.woff?iwr6rw') format('woff'),
+    url('fonts/jt-icons.svg?iwr6rw#jt-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="jt-i-"], [class*=" jt-i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'jt-icons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.jt-i-contacts:before {
+  content: "\e962";
+}
+.jt-i-transfer_within_a_station:before {
+  content: "\eb40";
+}
+.jt-i-fastfood:before {
+  content: "\eb48";
+}
+.jt-i-menu:before {
+  content: "\eb58";
+}
+.jt-i-airline_seat_individual_suite:before {
+  content: "\eb84";
+}
+.jt-i-person:before {
+  content: "\ebad";
+}
+.jt-i-credit_card:before {
+  content: "\ebdf";
+}
+.jt-i-face:before {
+  content: "\ebe9";
+}
+.jt-i-calendar_today:before {
+  content: "\ec87";
+}
+.jt-i-king_bed:before {
+  content: "\ed46";
+}
+.jt-i-bakery_dining:before {
+  content: "\ed4e";
+}
+.jt-i-bedtime:before {
+  content: "\ed9a";
+}
+.jt-i-person_add_alt_1:before {
+  content: "\ee1b";
+}
+.jt-i-person_remove:before {
+  content: "\ee1c";
+}
+.jt-i-person_search:before {
+  content: "\ee1d";
+}
