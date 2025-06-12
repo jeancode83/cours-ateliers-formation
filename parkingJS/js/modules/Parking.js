@@ -64,9 +64,9 @@ export default class Parking {
 		msg += `Sélectionnez 2 pour récupérer votre véhicule\n`;
 		msg += `------------------------\n`;
 		msg += `Sélectionnez 3 pour annuler l'opération\n`;
-	
+		
 		return msg;
-		}
+	}
 
 	// Méthode pour avoir le nb de places disponibles par le biais du calcul places totales - la méthode getPlacesOccup
 	getPlacesDispo() {	
